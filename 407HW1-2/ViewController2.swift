@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController2: UIViewController {
     
+    var answers = [String]()
+    
+    @IBOutlet weak var text2: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,5 +23,18 @@ class ViewController2: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func button2(sender: AnyObject) {
+        self.performSegueWithIdentifier("two", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "two") {
+            let vc:ViewController3=segue.destinationViewController as!ViewController3
+            answers.append(text2.text!)
+            vc.answers = answers
+        }
+    }
+
 
 }
