@@ -14,6 +14,7 @@
 		3667FB581C756B7A00E8EB8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3667FB561C756B7A00E8EB8E /* LaunchScreen.storyboard */; };
 		3667FB631C756B7A00E8EB8E /* _07HW1_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667FB621C756B7A00E8EB8E /* _07HW1_2Tests.swift */; };
 		3667FB6E1C756B7A00E8EB8E /* _07HW1_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667FB6D1C756B7A00E8EB8E /* _07HW1_2UITests.swift */; };
+		3667FB7C1C756C0B00E8EB8E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667FB7B1C756C0B00E8EB8E /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3667FB691C756B7A00E8EB8E /* 407HW1-2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "407HW1-2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3667FB6D1C756B7A00E8EB8E /* _07HW1_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _07HW1_2UITests.swift; sourceTree = "<group>"; };
 		3667FB6F1C756B7A00E8EB8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3667FB7B1C756C0B00E8EB8E /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3667FB4D1C756B7900E8EB8E /* AppDelegate.swift */,
 				3667FB4F1C756B7900E8EB8E /* ViewController.swift */,
 				3667FB511C756B7900E8EB8E /* Main.storyboard */,
+				3667FB7B1C756C0B00E8EB8E /* ViewController2.swift */,
 				3667FB541C756B7A00E8EB8E /* Assets.xcassets */,
 				3667FB561C756B7A00E8EB8E /* LaunchScreen.storyboard */,
 				3667FB591C756B7A00E8EB8E /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				3667FB501C756B7900E8EB8E /* ViewController.swift in Sources */,
 				3667FB4E1C756B7900E8EB8E /* AppDelegate.swift in Sources */,
+				3667FB7C1C756C0B00E8EB8E /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

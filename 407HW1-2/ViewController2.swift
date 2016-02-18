@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ViewController2.swift
 //  407HW1-2
 //
 //  Created by Zihan Zhang on 2/17/16.
@@ -8,23 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var text1: UITextField!
+class ViewController2: UIViewController {
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
-    @IBAction func button1(sender: AnyObject) {
-        self.performSegueWithIdentifier("one", sender: self)
-    }
 }
-
