@@ -17,8 +17,6 @@ class ViewController3: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print(answers[0])
-        print(answers[1])
     }
     
     override func didReceiveMemoryWarning() {
