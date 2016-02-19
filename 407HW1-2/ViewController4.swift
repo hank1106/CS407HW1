@@ -10,19 +10,17 @@ import UIKit
 
 class ViewController4: UIViewController {
     var answers = [String]()
+    var scores = [String]()
     
     @IBOutlet weak var finalScore: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let correctAnswers = ["108","8","600"]
-        let correct = compareResults(self.answers, correctAnswers: correctAnswers)
-        let resultPercentage = Double(correct)/3.0*100
-        finalScore.text=String("You get ") + String(resultPercentage) + String("%");
+        let count = compareResults(self.answers, correctAnswers: correctAnswers)
+        let resultPercentage = Double(count)/3.0*100
+        finalScore.text=String("You got ") + String(count) + String("question(s) correct\n") + String(resultPercentage) + String("%");
         // Do any additional setup after loading the view, typically from a nib.
-        print(answers[0])
-        print(answers[1])
-        print(answers[2])
         
     }
     override func didReceiveMemoryWarning() {
