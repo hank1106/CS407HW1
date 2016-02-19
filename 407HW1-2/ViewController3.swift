@@ -13,10 +13,12 @@ class ViewController3: UIViewController {
     
     @IBOutlet weak var text3: UITextField!
    
+    @IBOutlet weak var q3: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        q3.text=String("If 4.5% equals 15% of 180, what is x?")
     }
     
     override func didReceiveMemoryWarning() {

@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     
     var answers = [String]()
 
-    @IBOutlet weak var text1: UITextField!
     
+    @IBOutlet weak var text1: UITextField!
     
     @IBOutlet weak var q1: UILabel!
     

@@ -15,10 +15,10 @@ class ViewController4: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let correctAnswers = ["1","2","3"]
+        let correctAnswers = ["108","8","600"]
         let correct = compareResults(self.answers, correctAnswers: correctAnswers)
         let resultPercentage = Double(correct)/3.0*100
-        finalScore.text=String("you get") + String(resultPercentage)
+        finalScore.text=String("You get ") + String(resultPercentage) + String("%");
         // Do any additional setup after loading the view, typically from a nib.
         print(answers[0])
         print(answers[1])

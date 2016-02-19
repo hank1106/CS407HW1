@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361B3CD21C76C2FD0079660D /* sample_geometry_problem_0000.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 361B3CD11C76C2FD0079660D /* sample_geometry_problem_0000.jpg */; };
 		3667FB4E1C756B7900E8EB8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667FB4D1C756B7900E8EB8E /* AppDelegate.swift */; };
 		3667FB501C756B7900E8EB8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667FB4F1C756B7900E8EB8E /* ViewController.swift */; };
 		3667FB531C756B7900E8EB8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3667FB511C756B7900E8EB8E /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		361B3CD11C76C2FD0079660D /* sample_geometry_problem_0000.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_geometry_problem_0000.jpg; sourceTree = "<group>"; };
 		3667FB4A1C756B7900E8EB8E /* 407HW1-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "407HW1-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3667FB4D1C756B7900E8EB8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3667FB4F1C756B7900E8EB8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		3667FB411C756B7900E8EB8E = {
 			isa = PBXGroup;
 			children = (
+				361B3CD11C76C2FD0079660D /* sample_geometry_problem_0000.jpg */,
 				3667FB4C1C756B7900E8EB8E /* 407HW1-2 */,
 				3667FB611C756B7A00E8EB8E /* 407HW1-2Tests */,
 				3667FB6C1C756B7A00E8EB8E /* 407HW1-2UITests */,
@@ -243,6 +246,7 @@
 			files = (
 				3667FB581C756B7A00E8EB8E /* LaunchScreen.storyboard in Resources */,
 				3667FB551C756B7A00E8EB8E /* Assets.xcassets in Resources */,
+				361B3CD21C76C2FD0079660D /* sample_geometry_problem_0000.jpg in Resources */,
 				3667FB531C756B7900E8EB8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +503,7 @@
 				3667FB741C756B7A00E8EB8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3667FB751C756B7A00E8EB8E /* Build configuration list for PBXNativeTarget "407HW1-2Tests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +512,7 @@
 				3667FB771C756B7A00E8EB8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3667FB781C756B7A00E8EB8E /* Build configuration list for PBXNativeTarget "407HW1-2UITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +521,7 @@
 				3667FB7A1C756B7A00E8EB8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
