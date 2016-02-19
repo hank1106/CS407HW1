@@ -30,7 +30,6 @@ class ViewController4: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
     func compareResults(answers:[String], correctAnswers:[String])->Int{
         var count:Int = 0
         for(index,element) in answers.enumerate(){
@@ -40,6 +39,17 @@ class ViewController4: UIViewController {
         }
         return count
     }
-
+    
+    @IBAction func button4(sender: AnyObject) {
+        self.performSegueWithIdentifier("four", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "four") {
+            let vc:ViewController=segue.destinationViewController as!ViewController
+            answers.removeAll()
+            vc.answers = answers
+        }
+    }
 
 }

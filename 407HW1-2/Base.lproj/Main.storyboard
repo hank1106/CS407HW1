@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,19 +15,25 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4vN-eA-f9A">
-                                <rect key="frame" x="275" y="165" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4vN-eA-f9A">
+                                <rect key="frame" x="97" y="211" width="223" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="uXt-Qp-AgY"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irm-5M-5oz">
-                                <rect key="frame" x="294" y="293" width="46" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNf-yT-yJa">
+                                <rect key="frame" x="20" y="136" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irm-5M-5oz">
+                                <rect key="frame" x="184" y="321" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ifw-sF-FCD"/>
@@ -34,8 +41,19 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eNf-yT-yJa" firstAttribute="centerX" secondItem="irm-5M-5oz" secondAttribute="centerX" id="JxC-Gi-UB7"/>
+                            <constraint firstItem="4vN-eA-f9A" firstAttribute="top" secondItem="eNf-yT-yJa" secondAttribute="bottom" constant="54" id="NAP-mF-JMZ"/>
+                            <constraint firstItem="eNf-yT-yJa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Vrd-23-frb"/>
+                            <constraint firstItem="eNf-yT-yJa" firstAttribute="centerX" secondItem="4vN-eA-f9A" secondAttribute="centerX" constant="-1.5" id="dmC-xj-pKe"/>
+                            <constraint firstItem="eNf-yT-yJa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="otk-ep-5Hg"/>
+                            <constraint firstItem="irm-5M-5oz" firstAttribute="top" secondItem="4vN-eA-f9A" secondAttribute="bottom" constant="80" id="ouV-Ep-Mk3"/>
+                            <constraint firstItem="eNf-yT-yJa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="116" id="rvA-hK-1na"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="q1" destination="eNf-yT-yJa" id="IH6-3q-yZc"/>
                         <outlet property="text1" destination="4vN-eA-f9A" id="st4-qQ-vkV"/>
                         <segue destination="trd-GF-KQP" kind="show" identifier="one" id="QYm-Xj-J1t"/>
                     </connections>
@@ -53,7 +71,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Xjk-PS-sQu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nFn-dI-Ua8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h6p-7t-arY">
@@ -68,6 +86,9 @@
                                     <action selector="button2:" destination="trd-GF-KQP" eventType="touchUpInside" id="1as-qd-8Px"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5d-Fy-qDx">
+                                <rect key="frame" x="280" y="41" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -89,7 +110,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7Vf-So-Ulq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qzE-Fd-aPt">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8YV-CS-UCw">
@@ -104,6 +125,12 @@
                                     <action selector="button3:" destination="KSI-Bf-6gT" eventType="touchUpInside" id="AJl-Qv-vaz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKh-Qm-mfR">
+                                <rect key="frame" x="186" y="139" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -125,7 +152,7 @@
                         <viewControllerLayoutGuide type="bottom" id="A4F-TD-qrK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZPM-IZ-PiL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REV-A1-guU">
@@ -134,11 +161,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cO-Jm-4lq">
+                                <rect key="frame" x="230" y="348" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button4:" destination="xu4-3V-aij" eventType="touchUpInside" id="t9D-59-Wws"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="finalScore" destination="REV-A1-guU" id="Gdz-9d-oY4"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="four" id="vpt-JN-fUz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3FN-YI-EaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

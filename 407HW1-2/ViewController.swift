@@ -14,9 +14,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var text1: UITextField!
     
+    
+    @IBOutlet weak var q1: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        q1.text=String("The average of 63, 64 85 and x is 80.\n What is the value of x?")
     }
 
     override func didReceiveMemoryWarning() {
